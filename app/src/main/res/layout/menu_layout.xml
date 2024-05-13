@@ -1,0 +1,246 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_corners_dropdown"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/yearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/filterYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Год:"
+            android:textSize="20dp"
+            android:textColor="@color/green"/>
+
+        <EditText
+            android:id="@+id/yearFromEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:hint="От года"
+            android:inputType="number"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/custom_input"
+            android:textColor="@color/green"/>
+
+
+        <EditText
+            android:id="@+id/yearToEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:hint="До года"
+            android:inputType="number"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/custom_input"
+            android:textColor="@color/green"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/priceLayout"
+        android:layout_below="@id/yearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/filterPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Цена:"
+            android:textSize="20dp"
+            android:textColor="@color/green"/>
+
+        <EditText
+            android:id="@+id/priceFromEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:hint="От BYN"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/custom_input"
+            android:textColor="@color/green"
+        />
+
+
+        <EditText
+            android:id="@+id/priceToEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:hint="До BYN"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/custom_input"
+            android:textColor="@color/green"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mileageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/priceLayout"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/filterMileage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Пробег:"
+            android:textSize="20dp"
+            android:textColor="@color/green"/>
+
+        <EditText
+            android:id="@+id/mileageFromEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:hint="От км"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/custom_input"
+            android:textColor="@color/green"/>
+
+        <EditText
+            android:id="@+id/mileageToEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:hint="До км"
+            android:inputType="number"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:background="@drawable/custom_input"
+            android:textColor="@color/green"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/marcaLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/mileageLayout"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/filterMarca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Марка:"
+            android:textSize="20dp"
+            android:textColor="@color/green"/>
+
+        <Spinner
+            android:id="@+id/marcaSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/MySpinnerStyle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/transmissionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/marcaLayout"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/filterTransmission"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Коробка передач:"
+            android:textSize="20dp"
+            android:textColor="@color/green"/>
+
+        <Spinner
+            android:id="@+id/transmissionSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/MySpinnerStyle"/>
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:id="@+id/buttonsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_centerHorizontal="true">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/applyFilterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Применить фильтр"
+                android:layout_marginEnd="8dp"
+                style="@style/GreenButton"
+                android:textSize="12sp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/resetFilterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сбросить фильтр"
+                android:layout_marginEnd="8dp"
+                style="@style/GreenButton"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

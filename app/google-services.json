@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "430270846082",
+    "firebase_url": "https://checking-82543-default-rtdb.firebaseio.com",
+    "project_id": "checking-82543",
+    "storage_bucket": "checking-82543.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430270846082:android:bff6ac06b9f1cf6f8a509b",
+        "android_client_info": {
+          "package_name": "com.example.check"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcnWXYWYAiN-yno1L_-9XlGI0J03RREZ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

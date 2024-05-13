@@ -1,0 +1,81 @@
+<resources>
+    <string-array name="marca_array">
+        <item></item>
+        <item>Acura</item>
+        <item>Alfa Romeo</item>
+        <item>Aston Martin</item>
+        <item>Audi</item>
+        <item>Bentley</item>
+        <item>BMW</item>
+        <item>Buick</item>
+        <item>Cadillac</item>
+        <item>Chevrolet</item>
+        <item>Chrysler</item>
+        <item>Citroën</item>
+        <item>Dacia</item>
+        <item>Daewoo</item>
+        <item>Daihatsu</item>
+        <item>Dodge</item>
+        <item>Ferrari</item>
+        <item>Fiat</item>
+        <item>Ford</item>
+        <item>Geely</item>
+        <item>Genesis</item>
+        <item>GMC</item>
+        <item>Haval</item>
+        <item>Honda</item>
+        <item>Hummer</item>
+        <item>Hyundai</item>
+        <item>Infiniti</item>
+        <item>Jaguar</item>
+        <item>Jeep</item>
+        <item>Kia</item>
+        <item>Lada</item>
+        <item>Lamborghini</item>
+        <item>Lancia</item>
+        <item>Land Rover</item>
+        <item>Lexus</item>
+        <item>Lincoln</item>
+        <item>Lotus</item>
+        <item>Maserati</item>
+        <item>Mazda</item>
+        <item>McLaren</item>
+        <item>Mercedes-Benz</item>
+        <item>Mercury</item>
+        <item>MG</item>
+        <item>Mini</item>
+        <item>Mitsubishi</item>
+        <item>Nissan</item>
+        <item>Opel</item>
+        <item>Peugeot</item>
+        <item>Plymouth</item>
+        <item>Pontiac</item>
+        <item>Porsche</item>
+        <item>Proton</item>
+        <item>Renault</item>
+        <item>Rolls-Royce</item>
+        <item>Rover</item>
+        <item>Saab</item>
+        <item>SEAT</item>
+        <item>Škoda</item>
+        <item>Smart</item>
+        <item>Subaru</item>
+        <item>Suzuki</item>
+        <item>Tesla</item>
+        <item>Toyota</item>
+        <item>Volkswagen</item>
+        <item>Volvo</item>
+    </string-array>
+    <string-array name="transmission_array">
+        <item></item>
+        <item>механика</item>
+        <item>автомат</item>
+        <item>робот</item>
+        <item>вариатор</item>
+    </string-array>
+    <array name="initial_slider_values">
+        <item>20.0</item>
+        <item>30.0</item>
+        <item>40.0</item>
+    </array>
+</resources>

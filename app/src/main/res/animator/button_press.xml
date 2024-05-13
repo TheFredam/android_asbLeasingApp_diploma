@@ -1,0 +1,7 @@
+<!-- res/anim/button_press.xml -->
+<objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
+    android:propertyName="backgroundColor"
+    android:duration="300"
+    android:valueFrom="#006f4d"
+    android:valueTo="#48c6b7"
+    android:valueType="intType"/>

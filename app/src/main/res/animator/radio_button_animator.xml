@@ -1,0 +1,22 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <set>
+            <objectAnimator
+                android:propertyName="scaleX"
+                android:duration="500"
+                android:valueFrom="0.5"
+                android:valueTo="1.2"
+                android:interpolator="@android:anim/bounce_interpolator" />
+            <objectAnimator
+                android:propertyName="scaleY"
+                android:duration="500"
+                android:valueFrom="0.5"
+                android:valueTo="1.2"
+                android:interpolator="@android:anim/bounce_interpolator" />
+            <objectAnimator
+                android:propertyName="alpha"
+                android:duration="300"  android:valueFrom="0.0"  android:valueTo="1.0"
+                android:interpolator="@android:anim/accelerate_interpolator" />
+        </set>
+    </item>
+</selector>

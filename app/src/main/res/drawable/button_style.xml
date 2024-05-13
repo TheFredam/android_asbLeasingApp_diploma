@@ -1,0 +1,30 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Кнопка при нажатии -->
+    <item android:state_pressed="true" >
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#006f4d"
+                android:endColor="#48c6b7"
+                android:angle="45" /> <!-- Новый градиент -->
+            <corners android:radius="8dp"/> <!-- Скругление углов -->
+            <padding android:left="10dp"
+                android:top="10dp"
+                android:right="10dp"
+                android:bottom="10dp"/> <!-- Отступы --><!-- Обводка -->
+        </shape>
+    </item>
+    <!-- Обычное состояние кнопки -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#00A875"
+                android:endColor="#59FAE7"
+                android:angle="45" /> <!-- Новый градиент -->
+            <corners android:radius="8dp"/>
+            <padding android:left="10dp"
+                android:top="10dp"
+                android:right="10dp"
+                android:bottom="10dp"/>
+        </shape>
+    </item>
+</selector>

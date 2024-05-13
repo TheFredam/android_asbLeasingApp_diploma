@@ -1,0 +1,12 @@
+<!-- В res/menu/filter_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="top">
+    <item
+        android:id="@+id/filter_year"
+        android:title="Год"
+        android:numericShortcut="1" />
+    <item
+        android:id="@+id/filter_transmission"
+        android:title="Трансмиссия"
+        android:numericShortcut="2" />
+</menu>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@drawable/rounded_background">
+
+    <RelativeLayout
+        android:id="@+id/layoutMarcaModel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp">
+
+        <LinearLayout
+            android:id="@+id/buttonsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/marcaTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:textColor="@color/green"
+                android:text="Марка:"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:shadowColor="#77000000"
+                android:translationZ="2dp" />
+
+            <TextView
+                android:id="@+id/modelTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:textColor="@color/green"
+                android:text="Модель:"
+                android:textStyle="bold"
+                android:layout_toEndOf="@id/marcaTextView"
+                android:layout_marginLeft="5dp"
+                android:shadowColor="#77000000"
+                android:translationZ="2dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:text="Цена:"
+        android:textStyle="bold"
+        android:layout_below="@id/layoutMarcaModel"
+        android:layout_marginTop="16dp"
+        android:shadowColor="#77000000"
+        android:translationZ="2dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/priceTextView"
+        android:layout_marginTop="3dp"
+        android:translationZ="2dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="24dp"
+        android:padding="8dp"
+        android:translationZ="2dp">
+
+        <TextView
+            android:id="@+id/yearTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:text="Год:"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/transmissionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:text="Трансмиссия:"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/mileageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="Километраж:"
+            android:textColor="@android:color/black"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+</RelativeLayout>
